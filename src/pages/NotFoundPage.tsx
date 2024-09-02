@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 const Container = styled.div`
   height: 100vh;
   box-sizing: border-box;
-  padding: 4em 8em;
+  padding: 8em 16em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,13 +16,21 @@ const Container = styled.div`
   background-repeat: no-repeat;
   background-position: center center;
 
+  @media(max-width: 2560px) {
+    padding: 4em 8em;
+  }
+
   @media(max-width: 720px) {
     padding: 2em 4em;
   }
 `
 
 const HeaderText = styled.h1`
-  font-size: 3em;
+  font-size: 4em;
+
+  @media(max-width: 2560px) {
+    font-size: 3em;
+  }
 
   @media(max-width: 1080px) {
     font-size: 2em;

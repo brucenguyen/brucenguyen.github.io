@@ -10,11 +10,25 @@ const Section = styled.section`
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
-  padding: 4em 8em;
+  padding: 8em 16em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1em;
+
+  svg {
+    width: 48px;
+    height: 48px;
+  }
+
+  @media(max-width: 2560px) {
+    padding: 4em 8em;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
 
   @media(max-width: 720px) {
     padding: 2em 4em;
@@ -22,7 +36,11 @@ const Section = styled.section`
 `
 
 const HeaderText = styled.h1`
-  font-size: 3em;
+  font-size: 4em;
+
+  @media(max-width: 2560px) {
+    font-size: 3em;
+  }
 
   @media(max-width: 1080px) {
     font-size: 2em;
@@ -233,7 +251,7 @@ const HomePage = () => {
           <Reveal delay={1}>
             <BottomAlignedContainer style={{ opacity: 1 - scrollY }}>
               <ScrollCTAContainer>
-                <ChevronDown color="white" size={20} />
+                <ChevronDown color="white" />
               </ScrollCTAContainer>
             </BottomAlignedContainer>
           </Reveal>

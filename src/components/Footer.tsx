@@ -11,13 +11,21 @@ const FooterContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 8em;
+  padding: 4em 16em;
   flex-wrap: wrap;
   gap: 1em;
   box-sizing: border-box;
 
   p {
-    font-size: 1em;
+    font-size: 2em;
+  }
+
+  @media (max-width: 2560px) {
+    padding: 2em 8em;
+
+    p {
+      font-size: 1em;
+    }
   }
 
   @media(max-width: 720px) {
@@ -33,15 +41,26 @@ const IconContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1em;
+  gap: 2em;
   flex-wrap: wrap;
 
   svg {
     opacity: 0.5;
     transition: opacity 250ms;
+    width: 48px;
+    height: 48px;
 
     &:hover {
       opacity: 1;
+    }
+  }
+
+  @media(max-width: 2560px) {
+    gap: 1em;
+
+    svg {
+      width: 24px;
+      height: 24px;
     }
   }
 `
