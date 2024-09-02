@@ -1,0 +1,51 @@
+html, body, #root {
+  background-color: #0f0f0f;
+  width: 100%;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: white;
+  font-family: "DM Serif Display", serif;
+  letter-spacing: -0.05em;
+  margin: 0px;
+}
+
+h2, h3, h3, h4, h5, h6 {
+  color: white;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  margin: 0px;
+}
+
+p {
+  color: white;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-size: 2em;
+  margin: 0px;
+
+  @media(max-width: 720px) {
+    font-size: 1.5em;
+  }
+
+  @media(max-width: 480px) {
+    font-size: 1em;
+  }
+}
+
+b {
+  font-weight: 600;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  transition: text-underline-offset 250ms;
+
+  &:hover {
+    text-underline-offset: 0.4em;
+  }
+}
