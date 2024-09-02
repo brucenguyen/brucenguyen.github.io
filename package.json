@@ -3,6 +3,7 @@
   "version": "3.0.0",
   "private": true,
   "main": "src/app/App.tsx",
+  "homepage": "https://brucenguyen.github.io",
   "dependencies": {
     "framer-motion": "^11.3.31",
     "react": "^18.3.1",
@@ -26,6 +27,7 @@
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
+    "gh-pages": "^6.1.1",
     "react-scripts": "^5.0.1",
     "typescript": "^5.5.4"
   },
@@ -35,7 +37,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src --ext .ts,.tsx --cache",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "browserslist": {
     "production": [
