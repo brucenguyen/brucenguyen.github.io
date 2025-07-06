@@ -42,7 +42,7 @@ const NotFoundPage = () => {
     <Layout>
       <Container>
         <Reveal>
-          <HeaderText>page not found</HeaderText>
+          <HeaderText>{'Page not found'.toLowerCase()}</HeaderText>
         </Reveal>
         <Reveal delay={0.5}>
           <p>
